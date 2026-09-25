@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maktab Jadval · School timetable</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<div class="app-banner">LOCAL WORKSPACE <span>Your school data is saved on this computer.</span><a href="/en">Website ↗</a></div>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Maktab Jadval home"><span class="logo">m<span>j</span></span><span>Maktab<span class="brand-sub">JADVAL</span></span></a>
+  <div class="school-tag"><span class="status-dot"></span> School workspace <small>LOCAL EDITION · 1.0</small></div>
+  <nav aria-label="Main navigation">
+    <button data-page="dashboard"><span>◈</span> Dashboard</button>
+    <div class="nav-caption">DATA</div>
+    <button data-page="people" data-resource="subjects"><span>▤</span> Subjects</button>
+    <button data-page="people" data-resource="rooms"><span>▦</span> Rooms</button>
+    <button data-page="people" data-resource="classes"><span>◫</span> Classes</button>
+    <button data-page="people" data-resource="teachers"><span>◉</span> Teachers</button>
+    <div class="nav-caption">TIMETABLE</div>
+    <button data-page="assignments"><span>⊞</span> Assignment matrix</button>
+    <button data-page="timetable" class="active"><span>▦</span> Timetable <small>Dars jadvali</small></button>
+    <button data-page="requirements"><span>▤</span> Teaching plan <small>O‘quv reja</small></button>
+    <button data-page="workload"><span>≡</span> School hours <small>All classes & teachers</small></button>
+    <button data-page="rules"><span>⌘</span> Rules <small>Qoidalar</small></button>
+    <button data-page="people"><span>♧</span> School resources <small>Maktab resurslari</small></button>
+    <button data-page="versions"><span>◷</span> Versions <small>Tarix</small></button>
+    <div class="nav-divider"></div>
+    <button data-page="research"><span>◈</span> Research & policy</button>
+    <button data-page="stages"><span>☑</span> Project stages</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="avatar">MJ</div><div>School administrator<small>Saved on this computer</small></div></div>
+</aside>
+<div class="shell"><header class="topbar"><div><span class="breadcrumb">WORKSPACE</span><span id="school-name">Loading…</span></div><div class="top-actions"><span id="revision" class="muted"></span><button id="settings-btn" class="button quiet">School settings</button></div></header>
+<main id="main"><div class="empty">Loading your school workspace…</div></main>
+<footer>Designed around your school. <span>Uzbekistan · Local school scheduler</span></footer></div>
+<dialog id="editor"><form id="editor-form"><div class="dialog-head"><div><span class="eyebrow">WORKSPACE EDITOR</span><h2 id="editor-title"></h2></div><button type="button" class="icon-button" id="close-dialog" aria-label="Close dialog">×</button></div><div id="editor-body"></div><div id="form-error" class="error" role="alert" hidden></div><div class="dialog-actions"><button type="button" class="button" id="cancel-dialog">Cancel</button><button type="submit" class="button primary" id="submit-dialog">Save changes</button></div></form></dialog>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<input id="import-file" type="file" accept=".json,application/json" hidden>
+<script src="/static/school-ui.js" defer></script>
+<link rel="stylesheet" href="/static/reference-theme.css">
+<script src="/static/workspace-ui.js" defer></script>
+</body></html>

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.pytest_cache-original/
+.playwright-cli/
+data/
+*.db
+*.db-*
+
+# Local UI captures and generated document artifacts
+jadval-*.yaml
+_docx_render_*/
+_*.png
+_*.docx
+Yillik_ish_rejasi_*.docx
+authentic-task*.svg
+ielts-task*.svg
